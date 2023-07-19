@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../src/fonts/Inter-Regular.woff'), url('../src/fonts/Inter-Regular.woff2');
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../src/fonts/Inter-Bold.woff'), url('../src/fonts/Inter-Bold.woff2');
+}
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url('../src/fonts/Inter-ExtraBold.woff'), url('../src/fonts/Inter-ExtraBold.woff2');
+}
+@font-face {
+    font-family: 'Inter-Thin';
+    src: url('../src/fonts/Inter-Thin.woff'), url('../src/fonts/Inter-Thin.woff2');
+}
+
+i.fa{
+    font-size: 30px;
+}
+header i.fa-xmark{
+    font-size: 35px;
+    transition: all 0.2s linear;
+}
+.hero:hover .heroImg{
+    filter: drop-shadow(0 0 100px rgba(66,184,131,.5));
+}
+
+.scroll-section .no-scrollbar::-webkit-scrollbar, .card-section .no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.scroll-section .no-scrollbar , .card-section .no-scrollbar{
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+  
+  /* Toggle B */
+  input:checked ~ .peer-cont{
+    background-image: linear-gradient(to right, #f863bd ,#4785fe)
+  }
+/*  */
+.accordion-item.active .fa-chevron-down{
+    transform: rotate(180deg);
+}
+.accordion-item.active .accordion-content , .accordion-child.chidactive .accordion-content p ,.accordion-child.chidactive .accordion-header .dash{
+    display: block;
+}
+.accordion-child.chidactive .accordion-header .icons{
+    display: none;
+}
+.accordion-child.chidactive .question{
+    color: #42b883;
+}
