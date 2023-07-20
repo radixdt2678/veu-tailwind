@@ -7,8 +7,16 @@ module.exports = {
       'Inter-ExtraBold': ['Inter-ExtraBold', 'sans-serif'],
       'Inter-Thin': ['Inter-Thin','sans-serif'],      
     },
-    extend: { 
-         
+    extend: {  
+      lineHeight: {
+        '12': '4.57rem',
+      },
+      dropShadow: {
+        '3xl': '0 0 100px rgba(66,184,131,.5)',
+      },
+      margin: {
+        '140': '140px',
+      },        
       colors: {
         'cerulean':'#0ebbd280',
         'errie-black':'#1a1a1a',

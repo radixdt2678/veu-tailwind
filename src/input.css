@@ -19,7 +19,6 @@
     font-family: 'Inter-Thin';
     src: url('../src/fonts/Inter-Thin.woff'), url('../src/fonts/Inter-Thin.woff2');
 }
-
 i.fa{
     font-size: 30px;
 }
@@ -27,10 +26,6 @@ header i.fa-xmark{
     font-size: 35px;
     transition: all 0.2s linear;
 }
-.hero:hover .heroImg{
-    filter: drop-shadow(0 0 100px rgba(66,184,131,.5));
-}
-
 .scroll-section .no-scrollbar::-webkit-scrollbar, .card-section .no-scrollbar::-webkit-scrollbar{
     display: none;
 }
@@ -38,11 +33,11 @@ header i.fa-xmark{
     -ms-overflow-style: none; 
     scrollbar-width: none;  
 }
-  
+
   /* Toggle B */
-  input:checked ~ .peer-cont{
-    background-image: linear-gradient(to right, #f863bd ,#4785fe)
-  }
+input:checked ~ .peer-cont{
+background-image: linear-gradient(to right, #f863bd ,#4785fe)
+}
 /*  */
 .accordion-item.active .fa-chevron-down{
     transform: rotate(180deg);
