@@ -35,6 +35,48 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+/* toggle */
+
+const tooglebtn = document.getElementById('tooglebtn');
+const element1 = document.querySelector('.element1');
+const element2 = document.querySelector('.element2');
+
+tooglebtn.addEventListener('click', () => {
+  element2.classList.toggle('box2')
+  element1.classList.toggle('box1')
+})
+/*  */
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const toggleButton = document.getElementById("tooglebtn");
+//   const element1 = document.querySelector(".element1");
+//   const element2 = document.querySelector(".element2");
+  
+//   // Set initial state of toggle
+//   let isToggled = false;
+  
+//   // Function to toggle the CSS classes
+//   function toggleCSS() {
+//   if (isToggled) {
+//   // Remove CSS classes when toggled off
+//   element1.classList.remove("box1");
+//   element2.classList.remove("box2");
+//   element2.classList.remove("box2-text")
+//   } else {
+//   // Add CSS classes when toggled on
+//   element1.classList.add("box2-text");
+//   element2.classList.add("box2");
+//   }
+  
+//   // Update the toggle state
+//   isToggled = !isToggled;
+//   }
+  
+
+//   toggleButton.onclick = toggleCSS;
+//   });
+
+
 
 /* FAQ  */
 
@@ -42,13 +84,13 @@ const accordionItems = document.querySelectorAll(".accordion-item");
 const accordionchild = document.querySelectorAll(".accordion-child");
 
 /*  */
+
 accordionItems.forEach((item) => {
   
   const header = item.querySelector(".accordion-header");
   const content = item.querySelector(".accordion-content");
 
   header.addEventListener("click", () => {
-    // close other items
     accordionItems.forEach((otherItem) => {
       if (otherItem !== item && otherItem.classList.contains("active")) {
         otherItem.classList.remove("active");
@@ -65,6 +107,7 @@ accordionItems.forEach((item) => {
     }
   });
 });
+
 /*  */
 
 accordionchild.forEach((item) => {
@@ -72,7 +115,6 @@ accordionchild.forEach((item) => {
   const content = item.querySelector(".accordion-content");
 
   header.addEventListener("click", () => {
-    // close other items
     accordionchild.forEach((otherItem) => {
       if (otherItem !== item && otherItem.classList.contains("chidactive")) {
         otherItem.classList.remove("chidactive");

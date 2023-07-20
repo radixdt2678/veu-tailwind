@@ -462,6 +462,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-\[16px\] {
   top: 16px;
 }
+.right-0 {
+  right: 0px;
+}
+.-top-28 {
+  top: -7rem;
+}
 .-top-10 {
   top: -2.5rem;
 }
@@ -513,11 +519,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .z-50 {
   z-index: 50;
 }
-.z-0 {
-  z-index: 0;
-}
 .z-\[-1\] {
   z-index: -1;
+}
+.z-0 {
+  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -1007,6 +1013,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+.bg-gradient-to-tl {
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1044,6 +1053,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .to-might-green {
   --tw-gradient-to: #0ebbd2;
+}
+.to-cerulean {
+  --tw-gradient-to: #0ebbd280;
 }
 .to-dodger-blue {
   --tw-gradient-to: #4785fe;
@@ -1169,6 +1181,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-Inter-Regular {
   font-family: Inter-Regular, sans-serif;
 }
+.font-Inter-semiBold {
+  font-family: Inter-semiBold, sans-serif;
+}
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -1228,6 +1243,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-light {
   font-weight: 300;
+}
+.font-extralight {
+  font-weight: 200;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1308,6 +1326,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .decoration-2 {
   text-decoration-thickness: 2px;
 }
+.opacity-70 {
+  opacity: 0.7;
+}
 .opacity-75 {
   opacity: 0.75;
 }
@@ -1328,7 +1349,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: var(--tw-shadow-colored);
 }
 .blur-3xl {
-  --tw-blur: blur(64px);
+  --tw-blur: blur(1000px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .drop-shadow-xl {
@@ -1405,6 +1426,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-family: 'Inter-Thin';
     src: url('../src/fonts/Inter-Thin.woff'), url('../src/fonts/Inter-Thin.woff2');
 }
+@font-face {
+    font-family: 'Inter-semiBold';
+    src: url('../src/fonts/Inter-SemiBold.woff'), url('../src/fonts/Inter-SemiBold.woff2');
+}
+
 i.fa{
     font-size: 30px;
 }
@@ -1434,6 +1460,26 @@ header i.fa-xmark{
 }
 .accordion-child.chidactive .question{
     color: #42b883;
+}
+
+.box1{
+    background-image: linear-gradient(to right, #42b883 , #0ebbd2);
+    border-radius: 24px;
+}
+.box1 span{
+    background-image: linear-gradient(to right, #42b883 , #0ebbd2);
+    -webkit-background-clip: text;
+            background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box2{
+    background-image: linear-gradient(to right, #f863bd , #5981f7);
+}
+.box2 span{
+    background-image: linear-gradient(to right, #f863bd , #5981f7);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .after\:absolute::after {
   content: var(--tw-content);
@@ -1589,16 +1635,6 @@ header i.fa-xmark{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group:hover .group-hover\:bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-.group:hover .group-hover\:bg-clip-text {
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-.group:hover .group-hover\:text-transparent {
-  color: transparent;
 }
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
@@ -1840,6 +1876,11 @@ header i.fa-xmark{
     line-height: 1;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1858,11 +1899,6 @@ header i.fa-xmark{
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:leading-\[95px\] {

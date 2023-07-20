@@ -5,9 +5,13 @@ module.exports = {
       'Inter-Regular': ['Inter-Regular', 'sans-serif'],   
       'Inter-Bold': ['Inter-Bold', 'sans-serif'], 
       'Inter-ExtraBold': ['Inter-ExtraBold', 'sans-serif'],
-      'Inter-Thin': ['Inter-Thin','sans-serif'],      
+      'Inter-Thin': ['Inter-Thin','sans-serif'], 
+      'Inter-semiBold': ['Inter-semiBold','sans-serif'],      
     },
-    extend: {  
+    extend: { 
+      blur: {
+        '3xl': '1000px',
+      }, 
       gap: {
         '30': '1.9rem',
       },
