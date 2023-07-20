@@ -35,9 +35,7 @@ header i.fa-xmark{
 }
 
   /* Toggle B */
-input:checked ~ .peer-cont{
-background-image: linear-gradient(to right, #f863bd ,#4785fe)
-}
+
 /*  */
 .accordion-item.active .fa-chevron-down{
     transform: rotate(180deg);

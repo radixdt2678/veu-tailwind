@@ -8,6 +8,13 @@ module.exports = {
       'Inter-Thin': ['Inter-Thin','sans-serif'],      
     },
     extend: {  
+      gap: {
+        '30': '1.9rem',
+      },
+      width: {
+        '90': '90%',
+        '49': '49%',
+      },
       lineHeight: {
         '12': '4.57rem',
       },
