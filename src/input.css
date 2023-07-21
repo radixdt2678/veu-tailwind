@@ -45,7 +45,7 @@ header i.fa-xmark{
 .accordion-item.active .fa-chevron-down{
     transform: rotate(180deg);
 }
-.accordion-item.active .accordion-content , .accordion-child.chidactive .accordion-content p ,.accordion-child.chidactive .accordion-header .dash{
+.accordion-item.active .accordion-content , .accordion-child.chidactive .accordion-content div ,.accordion-child.chidactive .accordion-header .dash{
     display: block;
 }
 .accordion-child.chidactive .accordion-header .icons{

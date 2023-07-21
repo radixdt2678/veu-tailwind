@@ -632,14 +632,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[50px\] {
   height: 50px;
 }
-.h-full {
-  height: 100%;
-}
 .h-6 {
   height: 1.5rem;
 }
 .h-auto {
   height: auto;
+}
+.h-full {
+  height: 100%;
 }
 .h-10 {
   height: 2.5rem;
@@ -736,11 +736,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-screen-xl {
   max-width: 1280px;
 }
-.max-w-full {
-  max-width: 100%;
-}
 .max-w-3xl {
   max-width: 48rem;
+}
+.max-w-full {
+  max-width: 100%;
 }
 .max-w-5xl {
   max-width: 64rem;
@@ -883,6 +883,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-y-10 {
   row-gap: 2.5rem;
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1172,14 +1177,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-center {
   text-align: center;
 }
+.font-Inter-Regular {
+  font-family: Inter-Regular, sans-serif;
+}
 .font-Inter-Bold {
   font-family: Inter-Bold, sans-serif;
 }
 .font-Inter-ExtraBold {
   font-family: Inter-ExtraBold, sans-serif;
-}
-.font-Inter-Regular {
-  font-family: Inter-Regular, sans-serif;
 }
 .font-Inter-semiBold {
   font-family: Inter-semiBold, sans-serif;
@@ -1452,7 +1457,7 @@ header i.fa-xmark{
 .accordion-item.active .fa-chevron-down{
     transform: rotate(180deg);
 }
-.accordion-item.active .accordion-content , .accordion-child.chidactive .accordion-content p ,.accordion-child.chidactive .accordion-header .dash{
+.accordion-item.active .accordion-content , .accordion-child.chidactive .accordion-content div ,.accordion-child.chidactive .accordion-header .dash{
     display: block;
 }
 .accordion-child.chidactive .accordion-header .icons{
